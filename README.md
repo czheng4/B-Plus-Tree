@@ -1,9 +1,7 @@
 # B-Plus-Tree
--------------
 
 ChaoHui Zheng
 
--------------
 This B+Tree is implemented in c++ using template, which allows you to use different data types for key and value. Additionally, you can specify the maximum number of children using template. One of the examples could be `Tree<double, string, 5>`. It tells the template that the data types of key and value are `double` and `string` respectively, and the maximum number of children the internal node hold is 5. If the third template parameter is not specified, 5 will be used.
 
 # B+Tree Member functions
