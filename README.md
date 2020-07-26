@@ -35,6 +35,7 @@ This B+Tree is implemented in c++ using template, which allows you to use differ
 | advance(distance) | Move the iterator by distance. More precisely, if distance is greater than 0, operator++ get called for "distance" times. If the distance is less than 0, operator-- get called for "distance" times |
 
 # Example
+You can find the code at [here](.src/example.cpp)
 
 ```
 #include <iostream>
@@ -97,6 +98,7 @@ B+Tree: iterator is out of range
 
 # A tool program
 A tool program is written for you to let you to insert and delete records, and print the B+Tree info. We will use `double` and `string` as key and value data types, respectively. It has the following commands.
+You can find the code at [here](.src/main.cpp)
 
 ```
 INSERT/I key val ...   - Insert a (key, val)
@@ -112,6 +114,13 @@ CLEAR/C                - Clear the tree
 ```
 
 ```
+UNIX> make
+make
+c++ -O3 -std=c++14 -Wall -Wextra -g -Iinclude/ -c -o obj/main.o src/main.cpp 
+c++ -O3 -std=c++14 -Wall -Wextra -g -Iinclude/ -o bin/main obj/main.o
+c++ -O3 -std=c++14 -Wall -Wextra -g -Iinclude/ -c -o obj/example.o src/example.cpp 
+c++ -O3 -std=c++14 -Wall -Wextra -g -Iinclude/ -o bin/example obj/example.o
+UNIX> bin/main  "B+tree:"
 B+tree: I  1 A   2 B   3 C   10 ABC   8 JACK   50 MARY   21 HUNTER
 B+tree: KEYS
 1.00 2.00 3.00 8.00 10.00 21.00 50.00 
