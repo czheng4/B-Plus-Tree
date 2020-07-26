@@ -28,6 +28,7 @@ This B+Tree is implemented in c++ using template, which allows you to use differ
 # iterator/reverse_iterator Member functions
 
 | Function Name     | Explanation   |
+|-------------------|----------------|
 | get_key()         | Return the key |
 | get_val()         | Retrun the value |
 | set_val(val)      | Set the value |
